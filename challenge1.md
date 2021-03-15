@@ -1,7 +1,7 @@
-'
-const mongoose = require("mongoose");
-const express = require("express");
-const router = express.Router();
+>
+>const mongoose = require("mongoose");
+>const express = require("express");
+>const router = express.Router();
 const app = express();
 
 const SleepSchema = new mongoose.Schema({
@@ -30,4 +30,3 @@ app.use("/api/admins", router);
 mongoose.connect(db).then(() => winston.info(`Connected to ${db}...`));
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => console.log(`Listening on port ${port}...`));
-'
