@@ -1,15 +1,14 @@
->
->const mongoose = require("mongoose");
->const express = require("express");
->const router = express.Router();
-const app = express();
+'const mongoose = require("mongoose");'
+'const express = require("express");'
+'const router = express.Router();'
+'const app = express();'
 
-const SleepSchema = new mongoose.Schema({
+'const SleepSchema = new mongoose.Schema({
     struggglingDays: { type: String, enum: ["Less than 2 weeks", "2 to 8 weeks", "More than 8 weeks"] },
     bedTime:Number,
     bedOutTime:Number,
     sleepingHour:Number,
-    });
+    });'
 
 const Sleep = mongoose.model("Sleep", SleepSchema);
 
