@@ -1,4 +1,3 @@
-'
 /**
   Definition for a binary tree node.
   public class TreeNode {
@@ -14,7 +13,7 @@
       }
   }
  **/
- # solution of valid Binary search Tree
+  
 class Solution {
     public boolean isValidBST(TreeNode root) {
         if(root==null)
@@ -36,4 +35,3 @@ class Solution {
         return isValidBST(left)&&isValidBST(right);
     }
 }
-'
